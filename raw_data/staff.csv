@@ -1,0 +1,31 @@
+staff_id,full_name,role,branch_id,join_date,salary_gbp,full_time
+OP01,Dr. Sarah Ahmed,Optometrist,BR01,07/02/2023,38819,Yes
+OP02,Dr. James Patel,Optometrist,BR01,09/03/2022,46024,Yes
+OP03,Dr. Priya Sharma,Optometrist,BR02,23/06/2022,42572,Yes
+OP04,Dr. Tom Hughes,Optometrist,BR02,26/02/2023,40848,Yes
+OP05,Dr. Nina Hassan,Optometrist,BR03,12/05/2021,39041,Yes
+OP06,Dr. Mark Ellis,Optometrist,BR03,24/07/2023,41070,Yes
+OP07,Dr. Aisha Khan,Optometrist,BR04,03/07/2022,45623,Yes
+OP08,Dr. Chris Wong,Optometrist,BR04,23/11/2020,38869,Yes
+OP09,Dr. Leila Noor,Optometrist,BR05,12/08/2022,51746,Yes
+OP10,Dr. Ryan Scott,Optometrist,BR05,29/06/2022,52719,Yes
+ST011,Amelia Rose,Contact Lens Optician,BR01,21/02/2023,21615,Yes
+ST012,Ben Carter,Store Manager,BR01,19/12/2022,21547,Yes
+ST013,Chloe Davies,Dispensing Optician,BR01,12/10/2021,28837,Yes
+ST014,Dan Malik,Optical Assistant,BR01,08/11/2022,24881,Yes
+ST015,Eva Singh,Receptionist,BR02,24/03/2022,19711,Yes
+ST016,Finn O'Brien,Store Manager,BR02,01/06/2022,25201,Yes
+ST017,Grace Kim,Optical Assistant,BR02,16/05/2022,24925,Yes
+ST018,Haris Ali,Contact Lens Optician,BR02,20/05/2023,20139,No
+ST019,Isla Brown,Optical Assistant,BR03,24/01/2022,23741,Yes
+ST020,Jack White,Optical Assistant,BR03,08/04/2023,25227,Yes
+ST021,Karen Patel,Receptionist,BR03,25/08/2022,24977,No
+ST022,Leo Xu,Dispensing Optician,BR03,18/11/2022,29716,Yes
+ST023,Mia Johnson,Receptionist,BR04,14/12/2021,20169,No
+ST024,Noah Green,Contact Lens Optician,BR04,20/02/2022,27751,Yes
+ST025,Olivia Black,Dispensing Optician,BR04,18/06/2023,31108,Yes
+ST026,Paul Reed,Receptionist,BR04,15/02/2022,22598,No
+ST027,Quinn Tran,Receptionist,BR05,22/07/2021,22752,Yes
+ST028,Rachel Fox,Optical Assistant,BR05,30/08/2021,25572,Yes
+ST029,Sam Kaur,Receptionist,BR05,26/09/2023,24155,Yes
+ST030,Tia Nolan,Dispensing Optician,BR05,30/01/2022,31241,Yes
