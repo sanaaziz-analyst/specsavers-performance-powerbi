@@ -19,6 +19,15 @@
 
 ---
 
+
+## 📂 Project Files
+
+| File | Description | Link |
+|------|-------------|------|
+| Raw Dataset | Simulated Excel data used as the source for this project | [Download Dataset](https://github.com/sanaaziz-analyst/specsavers-performance-powerbi/tree/main/raw_data) |
+| Power BI Report | Full `.pbix` file — open in Power BI Desktop to explore | [Download .pbix](https://github.com/sanaaziz-analyst/specsavers-performance-powerbi/blob/main/Specsavers%20Project.pbix) |
+| Live Dashboard | Published report viewable in browser (no login required) | [View Dashboard](YOUR_POWERBI_SERVICE_LINK_HERE) |
+---
 ## Why I Built This Project
 
 I spent over a year working as an office manager at Specsavers, so I know firsthand how the business runs. I saw how appointment no-shows affect the day, how branch targets are tracked, how different locations have completely different vibes in terms of footfall and revenue. When I moved into data analytics, building this project felt like a natural first step because I already understood the business context behind the numbers.
