@@ -206,7 +206,8 @@ One of the central London branches was the branch story I found most interesting
 ---
 ## Acknowledgements
 
-Dataset sourced from a restaurant consolidator case study. All analysis, cleaning, and visualisations are my own work.
+All data in this project is fully synthetic and was created by me from scratch to reflect realistic Specsavers optical retail operations. The table structures, KPIs, branch dynamics, and business scenarios are modelled on my direct experience working as an Office Manager at Specsavers, where I gained firsthand knowledge of how appointments, revenue, no-shows, and branch performance are tracked and managed day to day.
+All data cleaning, modelling, DAX calculations, and visualisations are entirely my own work.
 
 
 ---
