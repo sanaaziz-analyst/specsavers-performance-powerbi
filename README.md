@@ -36,7 +36,7 @@ Before anything else, I needed to get this data into a shape I could actually mo
 
 The raw files came in as CSV and Excel tables. I loaded everything into Power Query and worked through each table systematically before touching the data model.
 
-![Power Query Screenshot](screenshots/power_query.png)
+![Power Query Screenshot](images/power_query.png)
 
 The first thing I did was turn on column profiling so I could see errors, blanks, and value distributions straight away. That immediately flagged a few things: some columns had the wrong data type, appointment status had inconsistent labels like "No show", "No-Show" and "no_show" all meaning the same thing, and a few dimension tables had duplicate ID rows that would have broken relationships downstream.
 
@@ -54,7 +54,7 @@ By the end of the cleaning phase every table was consistent, typed correctly, an
 
 I built the report on a star schema. Two fact tables sit at the centre capturing transactional events, and three dimension tables describe the who, where, and what behind those events.
 
-![Data Model Screenshot](screenshots/data_model.png)
+![Data Model Screenshot](images/star_schema.png)
 
 **Fact tables**
 
@@ -80,76 +80,59 @@ I also created a dedicated Measures table to store all DAX calculations separate
 ```dax
 Total Appointments = COUNTROWS(appointments)
 
-Completed Appointments = 
-CALCULATE(
-    COUNTROWS(appointments),
-    appointments[status] = "Completed"
-)
+Complete Appointments = CALCULATE(COUNTROWS(appointments),appointments[status] = "Complete")
 
-No Show Appointments = 
-CALCULATE(
-    COUNTROWS(appointments),
-    appointments[status] = "No Show"
-)
+No Show Appointments = CALCULATE(COUNTROWS(appointments),appointments[status] = "No Show")
 
-No Show Rate = 
-DIVIDE(
-    [No Show Appointments],
-    [Total Appointments]
-)
+No Show Rate = DIVIDE( [No Show Appointments],[Total Appointments])
 ```
+![DAX Screenshot](images/total_appointments_measure.png)
+![DAX Screenshot](images/complete_appointment_measure.png)
+![DAX Screenshot](images/no_show_appointments_measure.png)
+![DAX Screenshot](images/no_show_rate_measure.png)
+
 
 **Revenue measures**
 
 ```dax
 Total Revenue = SUM(sales[total_gbp])
 
-Total Discount = 
-SUMX(
-    sales,
-    sales[total_gbp] * sales[discount_percentage]
-)
+Total Discount = SUMX(sales,sales[total_gbp] * sales[discount_percentage])
 
 Revenue After Discount = [Total Revenue] - [Total Discount]
 
 Average Discount % = AVERAGE(sales[discount_percentage])
 ```
+![DAX Screenshot](images/total_revenue_measure.png)
+![DAX Screenshot](images/total_discount_measure.png)
+![DAX Screenshot](images/revenue_after_discount_measure.png)
+![DAX Screenshot](images/avg_discount_%.png)
 
 **Efficiency measures**
 
 ```dax
-Conversion Rate = 
-DIVIDE(
-    [Total Revenue],
-    [Total Appointments]
-)
+Conversion Rate = DIVIDE( [Total Revenue], [Total Appointments])
 
-Revenue per Appointment = 
-DIVIDE(
-    [Total Revenue],
-    [Completed Appointments]
-)
+Revenue per Appointment = DIVIDE([Total Revenue],[Completed Appointments])
 ```
+![DAX Screenshot](images/conversion_rate_measure.png)
+![DAX Screenshot](images/revenue_per_appointment_measure.png)
 
 **Patient and staff measures**
 
 ```dax
 Total Patients = DISTINCTCOUNT(patients[patient_id])
 
-New Patients = 
-CALCULATE(
-    [Total Patients],
-    YEAR(patients[registered_date]) = YEAR(TODAY())
-)
+New Patients = CALCULATE([Total Patients],YEAR(patients[registered_date]) = YEAR(TODAY()))
 
 Total Staff = DISTINCTCOUNT(staff[staff_id])
 
-Appointments per Staff = 
-DIVIDE(
-    [Total Appointments],
-    [Total Staff]
-)
+Appointments per Staff = DIVIDE([Total Appointments],[Total Staff])
 ```
+![DAX Screenshot](images/total_patients_measure.png)
+![DAX Screenshot](images/new_patients_measure.png)
+![DAX Screenshot](images/total_staff_measure.png)
+![DAX Screenshot](images/appointment_per_staff_measure.png)
 
 ---
 
