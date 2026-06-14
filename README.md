@@ -7,8 +7,20 @@
 > **Important:** All data used in this project is fully simulated and does not represent real Specsavers operational figures. Branch names, patient records, staff details, and all revenue numbers are entirely fictional and were created purely for analytical and portfolio purposes. This project does not contain, reference, or expose any real company data.
 
 ---
+## **Tools & Technologies**
 
-## Why I Built This
+| Category | Tools |
+|----------|--------|
+| Data Source | Microsoft Excel |
+| Data Cleaning & Transformation | Power Query (M Language) |
+| Data Modelling | Power BI Data Model (Star Schema) |
+| Visualization | Power BI Desktop |
+| DAX Calculations | Data Analysis Expressions (DAX) |
+| Version Control | Git & GitHub |
+
+---
+
+## Why I Built This Project
 
 I spent over a year working as an office manager at Specsavers, so I know firsthand how the business runs. I saw how appointment no-shows affect the day, how branch targets are tracked, how different locations have completely different vibes in terms of footfall and revenue. When I moved into data analytics, building this project felt like a natural first step because I already understood the business context behind the numbers.
 
@@ -140,23 +152,27 @@ Appointments per Staff = DIVIDE([Total Appointments],[Total Staff])
 
 The report has three slicers running across all pages: Year, Branch, and Appointment Type. Everything filters together so a manager can isolate a specific branch or time period instantly.
 
+![Overview Page](images/slicers.png)
+
 ### Overview Page
 
-![Overview Page](screenshots/overview_page.png)
+![Overview Page](images/Dashboard.png)
+
+
 
 The top row shows five KPI cards: Total Appointments, Completed Appointments, No-Show Rate, Conversion Rate, and Revenue per Appointment. These give any viewer an immediate sense of scale and health before they go deeper.
 
-Below that sits a Line and Clustered Column chart showing Monthly Appointments alongside No-Show Rate on a dual axis. This is the chart I spent the most time on because it tells the most nuanced story — volume and behaviour together in one view.
+### Monthly Appointments & No-Show Rate
 
-### Revenue Page
+A Line and Clustered Column chart showing Monthly Appointments alongside No-Show Rate on a dual axis. This is the chart I spent the most time on because it tells the most nuanced story — volume and behaviour together in one view.
 
-![Revenue Page](screenshots/revenue_page.png)
+### Revenue 
 
-A line chart tracks Revenue After Discount month by month, showing the trend over the full period. A horizontal bar chart ranks branches by revenue, making it immediately obvious which locations are leading and which are falling behind.
+A line chart tracks Revenue After Discount month by month, showing the trend over the full period. 
 
-### Product and Category Page
+A horizontal bar chart ranks branches by revenue, making it immediately obvious which locations are leading and which are falling behind.
 
-![Product Category Page](screenshots/product_page.png)
+### Product and Category
 
 A donut chart breaks revenue down by product category. Lenses, frames, sunglasses, contacts, and accessories each get their own slice, and the proportions tell a clear story about where the business is concentrated and where there might be room to grow.
 
@@ -199,20 +215,20 @@ The no-show rate was the finding that stuck with me longest. 14.87% sounds like 
 One of the central London branches was the branch story I found most interesting. Everything on paper points to it being a strong performer: central London, high footfall, premium catchment area. But the numbers told a different story. That gap between what a location should produce and what it actually produces is exactly the kind of thing analysis is supposed to surface. Whether the cause is operational, competitive, or something in the local patient mix, it deserves attention.
 
 ---
+## Acknowledgements
 
-## Files in This Repository
+Dataset sourced from a restaurant consolidator case study. All analysis, cleaning, and visualisations are my own work.
 
-```
-specsavers-powerbi/
-│
-├── README.md
-├── Specsavers_Analysis.pbix
-└── screenshots/
-    ├── power_query.png
-    ├── data_model.png
-    ├── overview_page.png
-    ├── revenue_page.png
-    └── product_page.png
-```
-"Note: All data in this project is fully simulated and does not represent real Specsavers operational figures. Branch names, patient records, staff details, and revenue numbers are fictional and created for analytical purposes only."
+
 ---
+
+## Contact
+
+**Sana Aziz**
+
+Data Analyst | SQL • Excel • Power BI • Tableau • Python
+
+London, UK
+
+[![Gmail](https://img.shields.io/badge/Gmail-sana.aziz.leo%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:sana.aziz.leo@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sana--aziz--analyst--uk-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sana-aziz-analyst-uk/)
