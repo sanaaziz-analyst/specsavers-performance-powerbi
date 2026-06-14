@@ -1,6 +1,5 @@
 # Specsavers Branch Performance Analysis
 
-**Tools used:** Power BI, Power Query, DAX, Star Schema Data Modelling  
 **Industry:** Optical Retail / Healthcare Operations  
 **Data period:** 2024 to 2025
 
