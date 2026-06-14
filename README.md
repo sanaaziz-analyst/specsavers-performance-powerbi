@@ -98,10 +98,7 @@ No Show Appointments = CALCULATE(COUNTROWS(appointments),appointments[status] = 
 
 No Show Rate = DIVIDE( [No Show Appointments],[Total Appointments])
 ```
-![DAX Screenshot](images/total_appointments_measure.png)
-![DAX Screenshot](images/complete_appointment_measure.png)
-![DAX Screenshot](images/no_show_appointments_measure.png)
-![DAX Screenshot](images/no_show_rate_measure.png)
+
 
 
 **Revenue measures**
@@ -115,10 +112,7 @@ Revenue After Discount = [Total Revenue] - [Total Discount]
 
 Average Discount % = AVERAGE(sales[discount_percentage])
 ```
-![DAX Screenshot](images/total_revenue_measure.png)
-![DAX Screenshot](images/total_discount_measure.png)
-![DAX Screenshot](images/revenue_after_discount_measure.png)
-![DAX Screenshot](images/avg_discount_%.png)
+
 
 **Efficiency measures**
 
@@ -127,8 +121,7 @@ Conversion Rate = DIVIDE( [Total Revenue], [Total Appointments])
 
 Revenue per Appointment = DIVIDE([Total Revenue],[Completed Appointments])
 ```
-![DAX Screenshot](images/conversion_rate_measure.png)
-![DAX Screenshot](images/revenue_per_appointment_measure.png)
+
 
 **Patient and staff measures**
 
@@ -141,10 +134,7 @@ Total Staff = DISTINCTCOUNT(staff[staff_id])
 
 Appointments per Staff = DIVIDE([Total Appointments],[Total Staff])
 ```
-![DAX Screenshot](images/total_patients_measure.png)
-![DAX Screenshot](images/new_patients_measure.png)
-![DAX Screenshot](images/total_staff_measure.png)
-![DAX Screenshot](images/appointment_per_staff_measure.png)
+
 
 ---
 
