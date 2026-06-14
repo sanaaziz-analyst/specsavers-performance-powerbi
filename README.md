@@ -176,6 +176,38 @@ A donut chart breaks revenue down by product category. Lenses, frames, sunglasse
 
 ---
 
+
+## Business Questions Answered
+
+This project was built to answer six key operational questions 
+a Specsavers area manager or regional director would actually ask:
+
+1. **Which branches are underperforming relative to their market potential?**
+   → Analysed revenue per branch against location type to identify 
+   gaps between expected and actual performance.
+
+2. **When are no-shows highest and why?**
+   → Mapped no-show rates by month to identify seasonal patterns 
+   and peak-period overbooking risks.
+
+3. **What is the revenue impact of our current no-show rate?**
+   → Quantified the £ value of lost appointments against the 
+   industry benchmark to size the problem.
+
+4. **Are we growing year on year?**
+   → Built YoY measures for both revenue and appointments to track 
+   directional performance across 2024 and 2025.
+
+5. **Which product categories are underleveraged?**
+   → Broke revenue down by category to identify where contact lenses 
+   and accessories are being left on the table.
+
+6. **How efficiently are staff converting appointments into revenue?**
+   → Calculated revenue per appointment and appointments per staff 
+   member to surface productivity insights.
+
+   
+---
 ## What I Found
 
 **Appointments are growing but not evenly across the year**
@@ -185,6 +217,22 @@ Total appointments across the two-year period reached 16,703. The busiest months
 **The no-show rate is a real problem**
 
 14.87% of appointments resulted in a no-show. The optical retail benchmark sits somewhere between 8% and 12%, so this is above where it should be. What made it more interesting was that no-shows spiked in the same months where total appointments were highest. That points to overbooking during busy periods rather than a general behavioural issue. Reducing this by even two or three percentage points would recover a meaningful amount of revenue without needing a single extra patient.
+
+**Quantifying the no-show revenue impact**
+
+With 16,703 total appointments and an average revenue per appointment 
+of £105.81, each percentage point of no-show rate represents 
+approximately £17,670 in lost revenue annually.
+
+The current no-show rate of 14.87% sits 4.87 percentage points above 
+the industry benchmark of 10%. Closing that gap alone would recover 
+an estimated **£86,050 in lost revenue per year** — without acquiring 
+a single new patient.
+
+Simple operational changes such as SMS reminders 24 hours before 
+appointments or frictionless online rescheduling could realistically 
+achieve this, making it one of the highest ROI improvements available 
+to the business.
 
 **Conversion is strong but there is a hidden gap**
 
