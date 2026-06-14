@@ -175,8 +175,6 @@ A horizontal bar chart ranks branches by revenue, making it immediately obvious 
 A donut chart breaks revenue down by product category. Lenses, frames, sunglasses, contacts, and accessories each get their own slice, and the proportions tell a clear story about where the business is concentrated and where there might be room to grow.
 
 ---
-
-
 ## Business Questions Answered
 
 This project was built to answer six key operational questions 
@@ -206,17 +204,31 @@ a Specsavers area manager or regional director would actually ask:
    → Calculated revenue per appointment and appointments per staff 
    member to surface productivity insights.
 
-   
 ---
+
 ## What I Found
 
 **Appointments are growing but not evenly across the year**
 
-Total appointments across the two-year period reached 16,703. The busiest months were January through March, which makes sense when you think about it. January is when people act on the resolutions they made over Christmas, and NHS vouchers often reset at the start of the year. Volume softened noticeably mid-year before picking back up. Looking year on year, 2025 started stronger than 2024, which suggests either improving patient recall or better marketing performance at branch level.
+Total appointments across the two-year period reached 16,703. The 
+busiest months were January through March, which makes sense when you 
+think about it. January is when people act on the resolutions they made 
+over Christmas, and NHS vouchers often reset at the start of the year. 
+Volume softened noticeably mid-year before picking back up. Looking year 
+on year, 2025 started stronger than 2024, which suggests either improving 
+patient recall or better marketing performance at branch level.
+
+---
 
 **The no-show rate is a real problem**
 
-14.87% of appointments resulted in a no-show. The optical retail benchmark sits somewhere between 8% and 12%, so this is above where it should be. What made it more interesting was that no-shows spiked in the same months where total appointments were highest. That points to overbooking during busy periods rather than a general behavioural issue. Reducing this by even two or three percentage points would recover a meaningful amount of revenue without needing a single extra patient.
+14.87% of appointments resulted in a no-show. The optical retail benchmark 
+sits somewhere between 8% and 12%, so this is above where it should be. 
+What made it more interesting was that no-shows spiked in the same months 
+where total appointments were highest. That points to overbooking during 
+busy periods rather than a general behavioural issue. Reducing this by even 
+two or three percentage points would recover a meaningful amount of revenue 
+without needing a single extra patient.
 
 **Quantifying the no-show revenue impact**
 
@@ -229,26 +241,59 @@ the industry benchmark of 10%. Closing that gap alone would recover
 an estimated **£86,050 in lost revenue per year** — without acquiring 
 a single new patient.
 
+> **Calculation:** 16,703 appointments × 4.87% gap = 813 missed 
+> appointments × £105.81 avg revenue = **£86,050**
+
 Simple operational changes such as SMS reminders 24 hours before 
 appointments or frictionless online rescheduling could realistically 
 achieve this, making it one of the highest ROI improvements available 
 to the business.
 
+---
+
 **Conversion is strong but there is a hidden gap**
 
-When patients actually show up, the teams do a good job converting them into sales. A 68.5% conversion rate is solid. But the gap between 16,703 total appointments and 10,815 completed ones is significant. That is nearly 6,000 appointment slots where revenue was zero before the consultation even started. Some of those will be genuine cancellations, but some will be fixable with better confirmation messages, easier rescheduling, or a simple phone call.
+When patients actually show up, the teams do a good job converting them 
+into sales. A 68.5% conversion rate is solid. But the gap between 16,703 
+total appointments and 10,815 completed ones is significant. That is nearly 
+6,000 appointment slots where revenue was zero before the consultation even 
+started. Some of those will be genuine cancellations, but some will be 
+fixable with better confirmation messages, easier rescheduling, or a simple 
+phone call.
+
+---
 
 **Revenue per appointment is drifting downward**
 
-The average across the period was £105.81, but when you look at the monthly trend it is a gradual decline from January through to June. This does not look like a footfall problem. It looks more like a product mix shift, perhaps patients choosing more basic frames or fewer premium lens options. That kind of subtle drift is easy to miss unless you are actively tracking it at this level of detail.
+The average across the period was £105.81, but when you look at the monthly 
+trend it is a gradual decline from January through to June. This does not 
+look like a footfall problem. It looks more like a product mix shift, perhaps 
+patients choosing more basic frames or fewer premium lens options. That kind 
+of subtle drift is easy to miss unless you are actively tracking it at this 
+level of detail.
+
+---
 
 **Some branches are carrying the weight**
 
-Two northern branches were the standout performers. Their revenue was consistently higher than the group average and their no-show rates were more controlled. At the other end, one of the central London branches surprised me. Given the location, the footfall potential, and the premium demographic in that area, its revenue numbers were lower than I expected. Whether that is down to local competition, appointment mix, or something in the patient journey is worth investigating further.
+Two northern branches were the standout performers. Their revenue was 
+consistently higher than the group average and their no-show rates were 
+more controlled. At the other end, one of the central London branches 
+surprised me. Given the location, the footfall potential, and the premium 
+demographic in that area, its revenue numbers were lower than I expected. 
+Whether that is down to local competition, appointment mix, or something 
+in the patient journey is worth investigating further.
+
+---
 
 **Contacts and accessories are being left on the table**
 
-Lenses accounted for 39.89% of revenue and frames for 37.8%, which is exactly what you would expect from an optical retailer. But contacts came in at only 7.85% and accessories at 2.44%. Those two categories feel underleveraged. Contact lens subscriptions in particular represent a recurring revenue stream that most branches seem to be underutilising compared to their size.
+Lenses accounted for 39.89% of revenue and frames for 37.8%, which is 
+exactly what you would expect from an optical retailer. But contacts came 
+in at only 7.85% and accessories at 2.44%. Those two categories feel 
+underleveraged. Contact lens subscriptions in particular represent a 
+recurring revenue stream that most branches seem to be underutilising 
+compared to their size.
 
 ---
 
