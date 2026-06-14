@@ -118,7 +118,7 @@ Average Discount % = AVERAGE(sales[discount_percentage])
 ```dax
 Conversion Rate = DIVIDE( [Total Revenue], [Total Appointments])
 
-Revenue per Appointment = DIVIDE([Total Revenue],[Completed Appointments])
+Revenue per Appointment = DIVIDE([Total Revenue],[Complete Appointments])
 ```
 
 
