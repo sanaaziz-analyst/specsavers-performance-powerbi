@@ -77,18 +77,34 @@ I built the report on a star schema. Two fact tables sit at the centre capturing
 
 **Fact tables**
 
-- fact_appointments holds one row per appointment and contains date, type, duration, status, and the foreign keys linking to patients, staff, and branches
-- fact_sales holds one row per sales transaction, linked back to the appointment that generated it and to the branch
+* fact_appointments holds one row per appointment and contains date, type, 
+  duration, status, and the foreign keys linking to patients, staff, and branches
+* fact_sales holds one row per sales transaction, linked back to the 
+  appointment that generated it and to the branch
 
 **Dimension tables**
 
-- dim_branches describes each branch including city, manager, and opening year
-- dim_patients holds patient demographics and NHS exemption status
-- dim_staff covers role, contract type, join date, and salary band
+* dim_branches describes each branch including city, manager, and opening year
+* dim_patients holds patient demographics and NHS exemption status
+* dim_staff covers role, contract type, join date, and salary band
+* dim_date is a dedicated calendar table built using DAX CALENDAR(), 
+  containing Date, Month Name, Month Number, Quarter, Week Number, 
+  and Year columns. This enables time intelligence measures such as 
+  Revenue YoY % and Appointments YoY % to work correctly.
 
-All relationships follow a one-to-many pattern from dimension to fact. I kept cross-filter direction as Single throughout, which is best practice in a star schema because it keeps DAX behaviour predictable and avoids ambiguous filter paths.
+All relationships follow a one-to-many pattern from dimension to fact. 
+I kept cross-filter direction as Single throughout, which is best practice 
+in a star schema because it keeps DAX behaviour predictable and avoids 
+ambiguous filter paths.
 
-I also created a dedicated Measures table to store all DAX calculations separately from the raw data. This keeps the model clean and is standard practice in professional BI teams. Every measure lives in one place, which makes maintenance and debugging much easier.
+The dim_date table connects to fact_appointments via a one-to-many 
+relationship on the date column, acting as the single source of truth 
+for all time-based filtering and year-on-year calculations across the report.
+
+I also created a dedicated Measures table to store all DAX calculations 
+separately from the raw data. This keeps the model clean and is standard 
+practice in professional BI teams. Every measure lives in one place, which 
+makes maintenance and debugging much easier.
 
 ---
 ## DAX Measures
