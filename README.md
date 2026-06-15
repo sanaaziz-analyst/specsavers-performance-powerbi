@@ -39,8 +39,7 @@ The goal was simple: give a management team a clear, honest picture of appointme
 ---
 
 ## The Data
-
-I was given five raw tables to work with:
+I designed and created five raw tables to work with:
 
 - **Branches** — branch locations, cities, managers, opening years
 - **Staff** — roles, join dates, contract types, salary bands
