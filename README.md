@@ -6,6 +6,11 @@
 > **Important:** All data used in this project is fully simulated and does not represent real Specsavers operational figures. Branch names, patient records, staff details, and all revenue numbers are entirely fictional and were created purely for analytical and portfolio purposes. This project does not contain, reference, or expose any real company data.
 
 ---
+
+## 📺 Dashboard Preview
+
+![Dashboard Demo](https://github.com/sanaaziz-analyst/specsavers-performance-powerbi/blob/main/SpecsaversProject2026-06-1501-47-22-ezgif.com-video-to-gif-converter.gif)
+---
 ## **Tools & Technologies**
 
 | Category | Tools |
