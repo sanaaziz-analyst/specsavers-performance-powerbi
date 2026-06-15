@@ -143,7 +143,7 @@ Rev per Appointment Target = 100
 **Efficiency measures**
 
 ```dax
-Conversion Rate = DIVIDE([Total Revenue],[Total Appointments])
+Conversion Rate = DIVIDE([Complete Appointments],[Total Appointments])
 
 Revenue per Appointment = DIVIDE([Total Revenue],[Completed Appointments])
 ```
@@ -175,7 +175,10 @@ The report has three slicers running across all pages: Year, Branch, and Appoint
 
 
 
-The top row shows five KPI cards: Total Appointments, Completed Appointments, No-Show Rate, Conversion Rate, and Revenue per Appointment. These give any viewer an immediate sense of scale and health before they go deeper.
+The dashboard shows six KPI cards across two rows. The first row covers volume and attendance: Total Appointments, Completed Appointments, and 
+No-Show Rate. The second row covers financial performance: Conversion Rate, 
+Revenue YoY %, and Appointments YoY %. Together they give any viewer an 
+immediate sense of scale, health, and year-on-year growth before going deeper.
 
 ### Monthly Appointments & No-Show Rate
 
