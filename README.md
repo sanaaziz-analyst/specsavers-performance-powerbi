@@ -92,7 +92,6 @@ All relationships follow a one-to-many pattern from dimension to fact. I kept cr
 I also created a dedicated Measures table to store all DAX calculations separately from the raw data. This keeps the model clean and is standard practice in professional BI teams. Every measure lives in one place, which makes maintenance and debugging much easier.
 
 ---
-
 ## DAX Measures
 
 **Appointment measures**
@@ -104,10 +103,8 @@ Complete Appointments = CALCULATE(COUNTROWS(appointments),appointments[status] =
 
 No Show Appointments = CALCULATE(COUNTROWS(appointments),appointments[status] = "No Show")
 
-No Show Rate = DIVIDE( [No Show Appointments],[Total Appointments])
+No Show Rate = DIVIDE([No Show Appointments],[Total Appointments])
 ```
-
-
 
 **Revenue measures**
 
@@ -121,15 +118,35 @@ Revenue After Discount = [Total Revenue] - [Total Discount]
 Average Discount % = AVERAGE(sales[discount_percentage])
 ```
 
+**Time Intelligence measures**
+
+```dax
+Revenue PY = CALCULATE([Total Revenue],SAMEPERIODLASTYEAR(dim_date[Date]))
+
+Revenue YoY % =DIVIDE([Total Revenue] - [Revenue PY],[Revenue PY])
+
+Appointments PY = CALCULATE([Total Appointments],SAMEPERIODLASTYEAR(dim_date[Date]))
+
+Appointments YoY % = DIVIDE([Total Appointments] - [Appointments PY],[Appointments PY])
+```
+
+**KPI Target measures**
+
+```dax
+No Show Rate Target = 0.10
+
+Conversion Rate Target = 0.65
+
+Rev per Appointment Target = 100
+```
 
 **Efficiency measures**
 
 ```dax
-Conversion Rate = DIVIDE( [Total Revenue], [Total Appointments])
+Conversion Rate = DIVIDE([Total Revenue],[Total Appointments])
 
-Revenue per Appointment = DIVIDE([Total Revenue],[Complete Appointments])
+Revenue per Appointment = DIVIDE([Total Revenue],[Completed Appointments])
 ```
-
 
 **Patient and staff measures**
 
@@ -254,7 +271,7 @@ to the business.
 **Conversion is strong but there is a hidden gap**
 
 When patients actually show up, the teams do a good job converting them 
-into sales. A 68.5% conversion rate is solid. But the gap between 16,703 
+into sales. A 64.7% conversion rate is solid. But the gap between 16,703 
 total appointments and 10,815 completed ones is significant. That is nearly 
 6,000 appointment slots where revenue was zero before the consultation even 
 started. Some of those will be genuine cancellations, but some will be 
