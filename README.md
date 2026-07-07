@@ -187,7 +187,6 @@ Appointments per Staff = DIVIDE([Total Appointments],[Total Staff])
 
 The report has three slicers running across all pages: Year, Branch, and Appointment Type. Everything filters together so a manager can isolate a specific branch or time period instantly.
 
-![Overview Page](images/slicers.png)
 
 ### Overview Page
 
