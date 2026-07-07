@@ -7,9 +7,9 @@
 
 ---
 
-## 📺 Dashboard Preview
+## 📺 Report Preview
 
-![Dashboard Demo](https://github.com/sanaaziz-analyst/specsavers-performance-powerbi/blob/main/SpecsaversProject2026-06-1501-47-22-ezgif.com-video-to-gif-converter.gif)
+![Report Demo](https://github.com/sanaaziz-analyst/specsavers-performance-powerbi/blob/main/SpecsaversProject2026-06-1501-47-22-ezgif.com-video-to-gif-converter.gif)
 ---
 ## **Tools & Technologies**
 
@@ -31,7 +31,7 @@
 |------|-------------|------|
 | Raw Dataset | Simulated Excel data used as the source for this project | [Download Dataset](https://github.com/sanaaziz-analyst/specsavers-performance-powerbi/tree/main/raw_data) |
 | Power BI Report | Full `.pbix` file — open in Power BI Desktop to explore | [Download .pbix](https://github.com/sanaaziz-analyst/specsavers-performance-powerbi/blob/main/Specsavers%20Project.pbix) |
-| Live Dashboard | Published report viewable in browser (no login required) | [View Dashboard](YOUR_POWERBI_SERVICE_LINK_HERE) |
+| Live Report | Published report viewable in browser (no login required) | [View /Report](YOUR_POWERBI_SERVICE_LINK_HERE) |
 ---
 ## Why I Built This Project
 
@@ -183,7 +183,7 @@ Appointments per Staff = DIVIDE([Total Appointments],[Total Staff])
 
 ---
 
-## The Dashboard
+## The Report
 
 The report has three slicers running across all pages: Year, Branch, and Appointment Type. Everything filters together so a manager can isolate a specific branch or time period instantly.
 
@@ -195,7 +195,7 @@ The report has three slicers running across all pages: Year, Branch, and Appoint
 
 
 
-The dashboard shows six KPI cards across two rows. The first row covers volume and attendance: Total Appointments, Completed Appointments, and 
+The Report shows six KPI cards across two rows. The first row covers volume and attendance: Total Appointments, Completed Appointments, and 
 No-Show Rate. The second row covers financial performance: Conversion Rate, 
 Revenue YoY %, and Appointments YoY %. Together they give any viewer an 
 immediate sense of scale, health, and year-on-year growth before going deeper.
