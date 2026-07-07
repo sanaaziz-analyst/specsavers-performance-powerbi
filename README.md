@@ -23,7 +23,27 @@
 | Version Control | Git & GitHub |
 
 ---
+## TL;DR
 
+A Power BI dashboard analysing two years of simulated Specsavers branch 
+data — 16,703 appointments across UK branches, built on a star schema 
+with time intelligence, custom DAX KPIs, and drill-through by branch, 
+year, and appointment type.
+
+**Key findings:**
+- No-show rate of 14.87% sits above the 8–12% industry benchmark, 
+  costing an estimated **£86,050/year** in lost revenue
+- 64.7% conversion rate, with a ~6,000 appointment gap between 
+  booked and completed
+- Revenue per appointment (£105.81 avg) trending downward — 
+  signals a possible product-mix shift
+- Two northern branches significantly outperform; one central 
+  London branch underperforms relative to its footfall potential
+- Contacts (7.85%) and accessories (2.44%) are underleveraged 
+  vs. lenses and frames (77.7% combined)
+
+  ---
+  
 
 ## 📂 Project Files
 
@@ -335,6 +355,36 @@ recurring revenue stream that most branches seem to be underutilising
 compared to their size.
 
 ---
+## Limitations & What I'd Do Differently
+
+- **Simulated data ceiling**: because the dataset is synthetic, patterns 
+  like seasonal no-show spikes are modelled to be realistic but can't be 
+  statistically validated the way real operational data could be. With 
+  real data, I'd run significance tests on branch-to-branch differences 
+  rather than relying on visual comparison alone.
+
+- **No staff scheduling data**: I couldn't cross-reference no-show 
+  patterns against staff rota or booking-slot density, which would help 
+  confirm whether overbooking (rather than patient behaviour) is really 
+  the driver.
+
+- **Single-year comparison**: with only two years of data, the YoY 
+  measures show directional trend but not enough history to separate 
+  genuine trend from noise. A 3–5 year window would make the growth 
+  story more defensible.
+
+- **No external benchmarking data**: the 8–12% no-show benchmark and 
+  branch performance expectations are based on general industry 
+  knowledge rather than a specific published dataset — in a live 
+  project I'd source and cite exact benchmark figures.
+
+- **Next steps** if this were a live business dataset: build a 
+  what-if parameter to model revenue recovery scenarios at different 
+  no-show reduction targets, and add a patient-retention cohort 
+  analysis using registration date.
+
+  ---
+  
 
 ## Reflections
 
