@@ -185,7 +185,7 @@ Rev per Appointment Target = 100
 ```dax
 Conversion Rate = DIVIDE([Complete Appointments],[Total Appointments])
 
-Revenue per Appointment = DIVIDE([Total Revenue],[Completed Appointments])
+Revenue per Appointment = DIVIDE([Total Revenue],[Complete Appointments])
 ```
 
 **Patient and staff measures**
