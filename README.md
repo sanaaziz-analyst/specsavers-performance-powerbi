@@ -100,6 +100,11 @@ I built the report on a star schema. Two fact tables sit at the centre capturing
 
 ![Data Model Screenshot](images/star_schema.png)
 
+*(Note: within the Power BI model itself, tables are named `appointments`, 
+`sales`, `branches`, `patients`, and `staff`. The `fact_`/`dim_` prefixes 
+used below are for documentation purposes only, to make the star schema 
+roles clear to anyone reading this README.)*
+
 **Fact tables**
 
 * fact_appointments holds one row per appointment and contains date, type, 
