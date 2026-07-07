@@ -173,7 +173,7 @@ Revenue per Appointment = DIVIDE([Total Revenue],[Completed Appointments])
 ```dax
 Total Patients = DISTINCTCOUNT(patients[patient_id])
 
-New Patients = CALCULATE([Total Patients],YEAR(patients[registered_date]) = YEAR(TODAY()))
+New Patients = CALCULATE( [Total Patients],FILTER(patients,YEAR(patients[registered_date]) = MAX(dim_date[Year])))
 
 Total Staff = DISTINCTCOUNT(staff[staff_id])
 
