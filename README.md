@@ -359,6 +359,32 @@ underleveraged. Contact lens subscriptions in particular represent a
 recurring revenue stream that most branches seem to be underutilising 
 compared to their size.
 
+
+---
+
+## Recommendations
+
+**Reduce no-shows (14.87% → target 10%)**
+- Automated SMS/email reminder 24–48hrs before appointment with a one-tap reschedule link
+- Cap bookings per slot in Jan–March, where no-shows spike alongside volume — suggests overbooking, not just patient behaviour
+- Success measure: no-show rate below 12% within two quarters of rollout
+
+**Close the booked-to-completed gap (~6,000 appointments)**
+- Segment the gap by reason (cancelled vs no-show vs unconfirmed) — each needs a different fix
+- Confirmation call/text for high-value appointment types (e.g. contact lens fittings)
+
+**Investigate the revenue-per-appointment decline**
+- Isolate whether the drop is discount-driven or genuine product mix, using the existing discount % field
+- If mix-driven: in-branch merchandising or staff incentives toward mid/premium lens options
+
+**Investigate the underperforming London branch**
+- Recommend a patient-journey audit or mystery shopper rather than a data-only conclusion
+- Check local competitor density as a first hypothesis before assuming an operational cause
+
+**Grow contacts and accessories revenue**
+- Push trial-pack-to-subscription conversion for contact lenses at checkout, tracked as its own funnel
+- Track attach rate per staff member (not just per branch) for accessories — likely a coaching issue, not a demand issue
+
 ---
 ## Limitations & What I'd Do Differently
 
@@ -400,11 +426,13 @@ The no-show rate was the finding that stuck with me longest. 14.87% sounds like 
 One of the central London branches was the branch story I found most interesting. Everything on paper points to it being a strong performer: central London, high footfall, premium catchment area. But the numbers told a different story. That gap between what a location should produce and what it actually produces is exactly the kind of thing analysis is supposed to surface. Whether the cause is operational, competitive, or something in the local patient mix, it deserves attention.
 
 ---
+
+
+
 ## Acknowledgements
 
 All data in this project is fully synthetic and was created by me from scratch to reflect realistic Specsavers optical retail operations. The table structures, KPIs, branch dynamics, and business scenarios are modelled on my direct experience working as an Office Manager at Specsavers, where I gained firsthand knowledge of how appointments, revenue, no-shows, and branch performance are tracked and managed day to day.
 All data cleaning, modelling, DAX calculations, and visualisations are entirely my own work.
-
 
 ---
 
