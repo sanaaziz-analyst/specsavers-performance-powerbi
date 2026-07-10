@@ -443,6 +443,4 @@ All data cleaning, modelling, DAX calculations, and visualisations are entirely 
 Data Analyst | SQL • Excel • Power BI • Tableau • Python
 
 London, UK
-
-[![Gmail](https://img.shields.io/badge/Gmail-sana.aziz.leo%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:sana.aziz.leo@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-sana--aziz--analyst--uk-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sana-aziz-analyst-uk/)
